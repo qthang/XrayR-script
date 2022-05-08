@@ -126,7 +126,7 @@ config() {
     check_status
     case $? in
         0)
-            echo -e "XrayR状态: ${green}Trạng thái XrayR: Đang chạy ${plain}"
+            echo -e "Trạng thái XrayR: ${green}:Đang chạy ${plain}"
             ;;
         1)
             echo -e "Nó được phát hiện rằng bạn không khởi động XrayR hoặc XrayR không tự khởi động lại, hãy kiểm tra nhật ký？[Y/n]" && echo
@@ -137,7 +137,7 @@ config() {
             fi
             ;;
         2)
-            echo -e "XrayR状态: ${red}Trạng thái XrayR: Chưa được cài đặt ${plain}"
+            echo -e "Trạng thái XrayR: ${red}Chưa được cài đặt ${plain}"
     esac
 }
 
@@ -335,7 +335,7 @@ show_status() {
     check_status
     case $? in
         0)
-            echo -e "Trạng thái XrayR: ${green}đã được chạy${plain}"
+            echo -e "Trạng thái XrayR: ${green}Đang chạy${plain}"
             show_enable_status
             ;;
         1)
@@ -390,6 +390,7 @@ show_menu() {
     echo -e "
   ${green}Các tập lệnh quản lý phụ trợ XrayR，${plain}${red}không hoạt động với docker${plain}
 --- https://github.com/qthang/XrayR-VietHoa ---
+
   ${green}0.${plain} Thay đổi cài đặt
 ————————————————
   ${green}1.${plain} Cài đặt XrayR
