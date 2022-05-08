@@ -79,7 +79,7 @@ confirm_restart() {
 }
 
 before_show_menu() {
-    echo && echo -n -e "${yellow}Nhấn Enter để quay lại menu chính:: ${plain}" && read temp
+    echo && echo -n -e "${yellow}Nhấn Enter để quay lại menu chính ${plain}" && read temp
     show_menu
 }
 
@@ -126,7 +126,7 @@ config() {
     check_status
     case $? in
         0)
-            echo -e "XrayR状态: ${green}Trạng thái XrayR: đã được chạy ${plain}"
+            echo -e "XrayR状态: ${green}Trạng thái XrayR: Đang chạy ${plain}"
             ;;
         1)
             echo -e "Nó được phát hiện rằng bạn không khởi động XrayR hoặc XrayR không tự khởi động lại, hãy kiểm tra nhật ký？[Y/n]" && echo
