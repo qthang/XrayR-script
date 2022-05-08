@@ -126,7 +126,7 @@ config() {
     check_status
     case $? in
         0)
-            echo -e "Trạng thái XrayR: ${green}:Đang chạy ${plain}"
+            echo -e "Trạng thái XrayR: ${green}Đang chạy ${plain}"
             ;;
         1)
             echo -e "Nó được phát hiện rằng bạn không khởi động XrayR hoặc XrayR không tự khởi động lại, hãy kiểm tra nhật ký？[Y/n]" && echo
