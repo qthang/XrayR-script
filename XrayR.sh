@@ -443,7 +443,7 @@ show_menu() {
         ;;
         13) update_shell
         ;;
-        *) echo -e "${red}Vui lòng nhập số chính xác [0-12]${plain}"
+        *) echo -e "${red}Vui lòng nhập số chính xác [0-13]${plain}"
         ;;
     esac
 }
